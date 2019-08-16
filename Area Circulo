@@ -23,4 +23,5 @@ Proceso AreaCirculo
 	p<-3.141592
 	area<-p*r*r
 	Escribir "El area es: ", area
+	
 FinProceso
