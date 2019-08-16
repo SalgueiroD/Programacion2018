@@ -20,3 +20,11 @@ void main ()
 	cout<<suma<<endl;
 	getch();
 }
+
+Proceso Sumados
+	Leer a
+	Leer b
+	suma<-a+b
+	Escribir suma
+	
+FinProceso
