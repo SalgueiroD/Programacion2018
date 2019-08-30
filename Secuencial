@@ -1,0 +1,32 @@
+// secuencial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+
+{
+	float H,PH,IVA,salariobruto,salarioneto;
+	string N;
+	IVA=0.13;
+
+	cout<<"ingrese el nombre del Trabajador: "<<endl;
+	cin>>N;
+	cout<<"ingrese el numero de horas trabajadas: "<<endl;
+	cin>>H;
+	cout<<"ingrese el precio por hora: "<<endl;
+	cin>>PH;
+	salariobruto=H*PH;
+	cout<<salariobruto<<endl;
+	if (salariobruto>8272)
+	{
+		salarioneto=salariobruto-(salariobruto*IVA);
+	}
+	getch();
+}
