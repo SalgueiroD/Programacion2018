@@ -1,0 +1,39 @@
+// switch.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float costo;
+	int opcion,cantidad;
+	cout<< "Ingrese la cantidad: "<<endl;
+	cin>> cantidad;
+	cout<< "Selecione su pedido: "<<endl;
+	cout<< "\n \t Menu"<<endl;
+	cout<< "\n \t ===="<<endl;
+	cout<< "1. Hamburguesa"<<endl;
+	cout<< "2. Hamburguesa con queso"<<endl;
+	cout<< "3. Papas Fritas"<<endl;
+	cout<< "4. Soda"<<endl;
+	cout<< "Ingrese una opcion: "<<endl;
+	cin>>opcion;
+	switch (opcion)
+	{
+	case 1: costo=3;
+		break;
+	case 2: costo=5;
+		break;
+	case 3: costo=2;
+		break;
+	case 4: costo=2.5;
+		break;
+	default: cout<<"Opcion Invalida: "<<endl;
+	}
+	cout<< "El costo es: "<<costo*cantidad<<endl;
+	getch();
+}
