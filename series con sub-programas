@@ -1,0 +1,43 @@
+// nein.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+//prototipos
+int factorial (int n);
+float sumaserie (int n, int X);
+
+void main()
+{
+	int num, equis;
+	float suma;
+	cout<<"Ingrese el valor de X: ";
+	cin>> equis;
+	cout<<"Ingrese la cantidad de terminos: ";
+	cin>>num;
+	suma=sumaserie(num,equis);
+	cout<<"El resultado de la suma es: "<<suma;
+	getch();
+}
+
+int factorial(int n)
+{
+	int fact=1;
+	for (int i=2;i<=n;i++)
+		fact=fact*i;
+	return fact;
+}
+
+float sumaserie (int n, int X)
+{
+	float acum=0;
+	for (int i=1;i<=n;i++)
+	{
+		acum=acum+(powf(X,i*2)/factorial((i-1)*2+1));
+	}
+	return acum;
+}
