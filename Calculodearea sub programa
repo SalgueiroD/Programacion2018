@@ -1,0 +1,29 @@
+// cuadrado completo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float calculodearea(int x);
+
+void main()
+{
+	int Area,l;
+	cout<<"Ingrese el lado: "; 
+	cin>>l;
+	Area= calculodearea(l);
+	cout<<"El area del cuadrado es: "<<Area<<endl;
+	getch();
+}
+
+
+float calculodearea(int x)
+{
+	float A;
+	A= powf(x,2);
+	return A;
+}
+
