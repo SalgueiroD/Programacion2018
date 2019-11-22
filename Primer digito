@@ -1,0 +1,74 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int primer_digito(int num);
+int serie_producto(int num);
+int serie_suma(int num);
+
+void main()
+{
+	int num,opcion;
+	do{
+		cout<<"pedir numero"<<endl;
+		cin>> num;
+		cout<<"------MENU------"<<endl;
+		cout<<"1. Primer digito entero"<<endl;
+		cout<<"2. Serie del producto"<<endl;
+		cout<<"3. Serie de la suma"<<endl;
+		cout<<"4. salir"<<endl;
+		cin>>opcion;
+		switch(opcion)
+		{
+		case 1: cout<<"El primer digito es:";
+			cout<<primer_digito(num)<<endl;
+			break;
+		case 2: cout<<"La suma de los productos impares son: ";
+			cout<<serie_producto(num)<<endl;
+			break;
+		case 3: cout<<"La suma de los numeros impares son: ";
+			cout<<serie_suma(num)<<endl;
+			break;
+		case 4: cout<<"Salir";
+			break;
+		default:cout<<"Error"<<endl;
+			break;
+		}
+	}
+	while(opcion!=4);
+	getch();
+}
+
+int primer_digito(int num)
+{
+	int r;
+	while(num>0)
+	{
+		r=num%10;
+		num=num/10;
+	}
+	return r;
+}
+int serie_producto(int num)
+{
+	int i=1,c=0,s=1;
+	while (i<=num)
+	{
+		c=c+s;
+		s=s+2;
+		i=i+1;
+	}
+	return c;
+}
+int serie_suma(int num)
+{
+	int s=0;
+	for(int i=1; i<=num; i=i+2)
+	{
+		s=s+i;
+	}
+	return s;
+}
