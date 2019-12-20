@@ -1,0 +1,31 @@
+// Intercambiar dos Variables.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int A,B,aux;
+	cin>>A;
+	cin>>B;
+	aux=A;
+	A=B;
+	B=aux;
+	cout<<"El valor de A es: "<<A<<endl;
+	cout<<"El valor de B es: "<<B<<endl;
+	getch();
+}
+
+Proceso Intercambio
+	Leer A
+	Leer B
+	aux<-A
+	A<-B
+	B<-aux
+	Escribir "El valor de a es: ",A
+	Escribir "El valor de b es: ",B
+FinProceso
