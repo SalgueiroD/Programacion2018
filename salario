@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+int main ()
+	{ 
+	int salario[100],n;
+	char empleado[10]:
+	int mayor=0;
+	
+	cout<<"digite el numero de empleados:";
+    cin>>n;
+
+	for(int i=0; i<n; i++){
+	cout<<i+1<< " digite slario de empleado:";
+    cin>> salario[i];}
+	if(salario[i]>mayor){
+    mayor= salario[i];
+	emple= empleadocod[i];
+
+   }
+
+}
+
+cout<<" el salario mayor es:"<<mayor<<endl;
+cout<<" el codigo de ese empleado es :"<<emple<<endl;
+return 0;
+
+}
