@@ -5,7 +5,7 @@
  void main ()
  { 
 	
-	 int n ,numeros ,mayor=0, menoor=128;
+	 int n ,numeros ,mayor=0, menor=128;
 	 float suma0, promedio;
 	 cout<<"ingrese el numero de elementos:";
 	 cin>>n;
