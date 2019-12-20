@@ -1,0 +1,50 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{int d, m, a;
+cin >> d >> m >> a;
+if (m == 1)
+cout << "Verano" << endl;
+else if (m == 2)
+cout << "Verano" << endl;
+else if (m == 3) {
+if (d < 21)
+cout << "Verano" << endl;
+else
+cout << "Otonho" << endl;
+}
+else if (m == 4)
+	cout << "Otonho" << endl;
+else if (m == 5)
+cout << "Otonho" << endl;
+else if (m == 6) {
+if (d < 21)
+cout << "Otonho" << endl;
+else
+cout << "Invierno" << endl;
+}
+else if (m == 7)
+cout << "Invierno" << endl;
+else if (m == 8)
+cout << "Invierno" << endl;
+else if (m == 9) {
+if (d < 21)
+cout << "Invierno" << endl;
+else
+cout << "Primavera" << endl;
+}
+else if (m == 10)
+cout << "Primavera" << endl;
+else if (m == 11)
+cout << "Primavera" << endl;
+else if (m == 12) {
+if (d < 21)
+cout << "Primavera" << endl;
+else
+cout << "Verano" << endl;
+}
+system("pause");
+	return 0;
+}
